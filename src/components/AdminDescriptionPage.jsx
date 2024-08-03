@@ -1,22 +1,25 @@
-import React from 'react'
-import '../styles/adminDescriptionPage.css'
-import image12 from '../resources/image12.png'
+import React from 'react';
+import '../styles/adminDescriptionPage.css';
+import { useLocation } from 'react-router-dom';
 
 const AdminDescriptionPage = () => {
-  return (
-    <div>
-      <header>
+    const location = useLocation();
+    const { image, name } = location.state || {}; // Retrieve image and name from location state
+
+    return (
+        <div>
+            <header>
                 <h1>B.planet</h1>
                 <nav>
-                    <a href="#">Profile</a>
-                    <a href="#">Home</a>
-                    <a href="#">Contact Us</a>
+                    <a href="/adminhome">Home</a>
+                    <a href="/adminprofilepage">Profile</a>
+                    <a href="/admincontactus">Contact Us</a>
                 </nav>
             </header>
             <main>
                 <section className="description">
-                    <h2>Tree 1</h2>
-                    <img src={image12} alt="Plant Image 12" />
+                    <h2>{name}</h2> {/* Display the name of the image */}
+                    <img src={image} alt={name} />
                     <h3>Plant Care Guide</h3>
                     <p><strong>Water:</strong> Allow the soil to dry out completely before watering.</p>
                     <p><strong>Light:</strong> Bright indirect light is recommended.</p>
@@ -25,8 +28,8 @@ const AdminDescriptionPage = () => {
                     <p>A tree that is unique and interesting in every aspect. It's easy to care for and adds a touch of nature to any space.</p>
                 </section>
             </main>
-    </div>
-  )
-}
+        </div>
+    );
+};
 
-export default AdminDescriptionPage
+export default AdminDescriptionPage;
