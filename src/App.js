@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import './App.css';
 import Login from './components/Login';
 import AdminHome from './components/AdminHome';
+import AdminDescriptionPage from './components/AdminDescriptionPage';
 function App() {
   return (
     <div className="App">
@@ -11,7 +12,7 @@ function App() {
           {/* Public Routes */}
           <Route path='/login' element={<Login/>} />
           <Route path='/adminhome' element={<AdminHome/>}/>
-
+          <Route path='/admindescription' element={<AdminDescriptionPage/>}/>
           <Route path='*' element={<Navigate to="/login" />} />
         </Routes>
       </Router>
