@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F3F4F6; /* Lighter background for better readability */
+}
+
+header {
+    background-color: #4A5568; /* Darker shade for the header */
+    color: #FFF; /* White color for the text in the header */
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav a {
+    color: #FFF; /* White color for the navigation links */
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+}
+
+.login {
+    margin-bottom: 2em;
+}
+
+.login h2 {
+    margin-bottom: 1em;
+    color: #2D3748; /* Darker color for headings */
+}
+
+.login img {
+    width: 100px;
+    height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label, form input, form button {
+    margin-bottom: 1em;
+}
+
+form input, form button {
+    padding: 0.5em;
+}
+
+form button {
+    background-color: #4A5568; /* Darker button background */
+    color: #FFF; /* White button text */
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #2D3748; /* Darker shade on hover */
+}
