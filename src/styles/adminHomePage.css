@@ -3,14 +3,25 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #F3F4F6; /* Lighter background for better readability */
+    background-color: #FFF8EE; /* Updated background color */
 }
 
 header {
-    background-color: #4A5568; /* Darker shade for the header */
+    background-color: #C9C0B1; /* Updated color for the header */
     color: #FFF; /* White color for the text in the header */
-    text-align: center;
-    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
 }
 
 nav a {
@@ -64,4 +75,24 @@ main {
 
 .pagination button:hover {
     background-color: #2D3748; /* Darker shade on hover */
+}
+
+/* Additional styling for the intro section */
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.intro p {
+    flex: 1;
+    font-size: 1.5em;
+    color: #2D3748;
+    margin-right: 1em;
+}
+
+.intro img {
+    flex: 2;
+    max-width: 50%;
 }
