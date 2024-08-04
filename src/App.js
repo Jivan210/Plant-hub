@@ -17,7 +17,7 @@ function App() {
       <Router>
         <Routes>
           {/* Public Routes */}
-          <Route path='/login' element={<Login/>} />
+          <Route path='/' element={<Login/>} />
           <Route path='/adminhome' element={<AdminHome/>}/>
           <Route path='/admindescription' element={<AdminDescriptionPage/>}/>
           <Route path='/admincontactus' element={<AdminContactUs/>}/>
@@ -27,7 +27,7 @@ function App() {
           <Route path='/customerhome' element={<CustomerHome/>}/>
           <Route path='/customerdescription' element={<CustomerDescriptionPage/>}/>
           <Route path='/customercontactus' element={<CustomerContactUs/>}/>
-          <Route path='*' element={<Navigate to="/login" />} />
+          {/* <Route path='*' element={<Navigate to="/login" />} /> */}
         </Routes>
       </Router>
     </div>
