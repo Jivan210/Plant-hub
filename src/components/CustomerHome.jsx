@@ -68,8 +68,8 @@ const CustomerHome = () => {
             <main>
                 <section className="intro">
                     <h2>'As interesting as a plant'</h2>
-                    <img src={HeroImage1} alt="Hero Image 1" />
-                    <img src={HeroImage2} alt="Hero Image 2" />
+                    <img src={HeroImage1} alt="Imgae1" />
+                    <img src={HeroImage2} alt="Image2" />
                 </section>
                 <section className="featured-products">
                     <h3>Featured Product</h3>

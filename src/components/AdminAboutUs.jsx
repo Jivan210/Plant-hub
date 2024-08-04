@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/adminAboutUsPage.css'
-import { useLocation,Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const AdminAboutUs = () => {
   return (
