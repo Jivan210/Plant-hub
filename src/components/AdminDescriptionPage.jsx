@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/adminDescriptionPage.css';
-import { useLocation } from 'react-router-dom';
+import { useLocation,Link } from 'react-router-dom';
 
 const AdminDescriptionPage = () => {
     const location = useLocation();
@@ -11,9 +11,9 @@ const AdminDescriptionPage = () => {
             <header>
                 <h1>B.planet</h1>
                 <nav>
-                    <a href="/adminhome">Home</a>
-                    <a href="/adminprofilepage">Profile</a>
-                    <a href="/admincontactus">Contact Us</a>
+                    <Link to="/adminhome">Home</Link>
+                    <Link to="/adminprofilepage">Profile</Link>
+                    <Link to="/admincontactus">Contact Us</Link>
                 </nav>
             </header>
             <main>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/adminProfilePage.css'
+import { Link } from 'react-router-dom';
 
 const AdminProfilePage = () => {
     const [profile, setProfile] = useState({
@@ -33,9 +34,12 @@ const AdminProfilePage = () => {
             <header>
                 <h1>B.planet</h1>
                 <nav>
-                    <a href="/home">Home</a>
+                    {/* <a href="/home">Home</a>
                     <a href="/profile">Profile</a>
-                    <a href="/contact">Contact Us</a>
+                    <a href="/contact">Contact Us</a> */}
+                    <Link to = "/adminhome">Home</Link>
+                    <Link to = "/adminprofilepage">Profile</Link>
+                    <Link to = "/admincontactus">Contact Us</Link>
                 </nav>
             </header>
             <main>
