@@ -7,6 +7,10 @@ import AdminDescriptionPage from './components/AdminDescriptionPage';
 import AdminContactUs from './components/AdminContactUs';
 import AdminAboutUs from './components/AdminAboutUs';
 import AdminProfilePage from './components/AdminProfilePage';
+import CustomerProfilePage from './components/CustomerProfilePage';
+import CustomerHome from './components/CustomerHome';
+import CustomerDescriptionPage from './components/CustomerDescriptionPage';
+import CustomerContactUs from './components/CustomerContactUs';
 function App() {
   return (
     <div className="App">
@@ -19,6 +23,10 @@ function App() {
           <Route path='/admincontactus' element={<AdminContactUs/>}/>
           <Route path='/adminaboutus' element={<AdminAboutUs/>}/>
           <Route path='/adminprofilepage' element={<AdminProfilePage/>}/>
+          <Route path='/customerprofilepage' element={<CustomerProfilePage/>}/>
+          <Route path='/customerhome' element={<CustomerHome/>}/>
+          <Route path='/customerdescription' element={<CustomerDescriptionPage/>}/>
+          <Route path='/customercontactus' element={<CustomerContactUs/>}/>
           <Route path='*' element={<Navigate to="/login" />} />
         </Routes>
       </Router>

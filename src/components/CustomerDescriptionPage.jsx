@@ -1,8 +1,8 @@
 import React from 'react';
-import '../styles/adminDescriptionPage.css';
+import '../styles/customerDescriptionPage.css';
 import { useLocation } from 'react-router-dom';
 
-const AdminDescriptionPage = () => {
+const CustomerDescriptionPage = () => {
     const location = useLocation();
     const { image, name } = location.state || {}; // Retrieve image and name from location state
 
@@ -11,9 +11,9 @@ const AdminDescriptionPage = () => {
             <header>
                 <h1>B.planet</h1>
                 <nav>
-                    <a href="/adminhome">Home</a>
-                    <a href="/adminprofilepage">Profile</a>
-                    <a href="/admincontactus">Contact Us</a>
+                    <a href="/customerhome">Home</a>
+                    <a href="/customerprofilepage">Profile</a>
+                    <a href="/customercontactus">Contact Us</a>
                 </nav>
             </header>
             <main>
@@ -38,4 +38,4 @@ const AdminDescriptionPage = () => {
     );
 };
 
-export default AdminDescriptionPage;
+export default CustomerDescriptionPage;

@@ -1,18 +1,39 @@
-// auth.js
-
 const ADMIN_CREDENTIALS = {
-    username: 'admin',
+    email: 'admin@example.com',
     password: 'admin123'
 };
 
-export const handleLogin = (username, password) => {
-    if (username === ADMIN_CREDENTIALS.username && password === ADMIN_CREDENTIALS.password) {
+const CUSTOMER_CREDENTIALS = [
+    {
+        name: 'Jivan Pal',
+        email: 'jivan.pal@gmail.com',
+        password: 'Jivan@12345#',
+        phoneNumber: '87623456678',
+        address: 'Patia, BBSR',
+        state: 'Odisha',
+        zipCode: '751024'
+    },
+    {
+        name: 'Amrita',
+        email: 'amrita@gmail.com',
+        password: 'amrita@1234#',
+        phoneNumber: '1234567891',
+        address: 'Patia, BBSR',
+        state: 'Odisha',
+        zipCode: '751024'
+    }
+];
+
+export const handleLogin = (email, password) => {
+    if (email === ADMIN_CREDENTIALS.email && password === ADMIN_CREDENTIALS.password) {
         localStorage.setItem('loggedInUser', JSON.stringify(ADMIN_CREDENTIALS));
         return { success: true, role: 'admin' };
     }
 
-    const customerProfile = JSON.parse(localStorage.getItem('customerProfile'));
-    if (customerProfile && customerProfile.username === username && customerProfile.password === password) {
+    const customerProfile = CUSTOMER_CREDENTIALS.find(
+        (customer) => customer.email === email && customer.password === password
+    );
+    if (customerProfile) {
         localStorage.setItem('loggedInUser', JSON.stringify(customerProfile));
         return { success: true, role: 'customer' };
     }
@@ -20,16 +41,7 @@ export const handleLogin = (username, password) => {
     return { success: false, message: 'Invalid credentials' };
 };
 
-export const handleSignup = (username, password, email) => {
-    const newProfile = {
-        username,
-        password,
-        email,
-        name: 'John Doe',
-        phoneNumber: '9876543210',
-        address: '1234 Elm Street',
-        state: 'California',
-        zipCode: '90001',
-    };
-    localStorage.setItem('customerProfile', JSON.stringify(newProfile));
+export const getUserProfile = () => {
+    const user = localStorage.getItem('loggedInUser');
+    return user ? JSON.parse(user) : null;
 };

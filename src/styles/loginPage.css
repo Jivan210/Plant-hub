@@ -1,62 +1,86 @@
+/* loginPage.css */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #F3F4F6; /* Lighter background for better readability */
+    font-family: Arial, sans-serif;
+    background-color: #FFF9F0;
 }
 
 header {
-    background-color: #4A5568; /* Darker shade for the header */
-    color: #FFF; /* White color for the text in the header */
-    text-align: center;
-    padding: 1em 0;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #FFF9F0;
+    border-bottom: 1px solid #B48F8F;
 }
 
-nav a {
-    color: #FFF; /* White color for the navigation links */
-    margin: 0 1em;
-    text-decoration: none;
+header h1 {
+    font-size: 32px; /* Increased font size */
+    color: #000;
 }
 
 main {
-    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 50px);
 }
 
-.login {
-    margin-bottom: 2em;
+section.login {
+    background-color: #FFF9F0;
+    border: 2px solid #B48F8F;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
 }
 
-.login h2 {
-    margin-bottom: 1em;
-    color: #2D3748; /* Darker color for headings */
+.login-image img {
+    max-width: 100%;
+    border-right: 2px solid #B48F8F;
+    margin-right: 20px;
 }
 
-.login img {
-    width: 100px;
-    height: auto;
-}
-
-form {
+.login-form {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
-form label, form input, form button {
-    margin-bottom: 1em;
+.login-form h2 {
+    margin-bottom: 20px;
 }
 
-form input, form button {
-    padding: 0.5em;
+.login-form form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
-form button {
-    background-color: #4A5568; /* Darker button background */
-    color: #FFF; /* White button text */
+.login-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #B48F8F;
+    border-radius: 5px;
+    background-color: #D9D9D9;
+}
+
+.login-form button {
+    padding: 10px;
     border: none;
+    border-radius: 5px;
+    background-color: #CAC0B4;
+    color: #FFF;
     cursor: pointer;
 }
 
-form button:hover {
-    background-color: #2D3748; /* Darker shade on hover */
+.login-form button:hover {
+    background-color: #B48F8F;
 }

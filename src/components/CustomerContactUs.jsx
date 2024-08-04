@@ -1,7 +1,7 @@
 import React from 'react'
-import '../styles/adminContactUsPage.css'
+import '../styles/customerContactUsPage.css'
 
-const AdminContactUs = () => {
+const CustomerContactUs = () => {
   return (
     <div className="container">
       <header>
@@ -37,4 +37,4 @@ const AdminContactUs = () => {
   )
 }
 
-export default AdminContactUs
+export default CustomerContactUs

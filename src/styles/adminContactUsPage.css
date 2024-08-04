@@ -1,62 +1,85 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+.container {
+    background-color: #FFF9F0;
+    min-height: 100vh;
     padding: 0;
-    box-sizing: border-box;
-    background-color: #F3F4F6; /* Lighter background for better readability */
-}
-
-header {
-    background-color: #4A5568; /* Darker shade for the header */
-    color: #FFF; /* White color for the text in the header */
+    margin: 0;
+  }
+  
+  header {
+    background-color: #FFF9F0;
+    padding: 10px 0;
     text-align: center;
-    padding: 1em 0;
-}
-
-nav a {
-    color: #FFF; /* White color for the navigation links */
-    margin: 0 1em;
+  }
+  
+  nav a {
+    margin: 0 15px;
     text-decoration: none;
-}
-
-main {
-    padding: 2em;
-}
-
-.contact {
-    margin-bottom: 2em;
-}
-
-.contact h2 {
-    margin-bottom: 1em;
-    color: #2D3748; /* Darker color for headings */
-}
-
-form {
+    color: #000;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px); /* Adjusted for header height */
+  }
+  
+  .contact {
+    width: 60%;
+    text-align: center;
+  }
+  
+  .contact-box {
+    display: flex;
+    border: 1px solid #B48F8F;
+    padding: 20px;
+  }
+  
+  .left-side, .right-side {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .left-side h3 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .left-side a {
+    display: block;
+    margin: 10px 0;
+    text-decoration: underline;
+    color: inherit;
+  }
+  
+  .left-side a:hover {
+    color: #000;
+    cursor: pointer;
+  }
+  
+  .right-side form {
     display: flex;
     flex-direction: column;
-}
-
-form label, form input, form button {
-    margin-bottom: 1em;
-}
-
-form input, form button {
-    padding: 0.5em;
-}
-
-form button {
-    background-color: #4A5568; /* Darker button background */
-    color: #FFF; /* White button text */
+  }
+  
+  .right-side input,
+  .right-side textarea {
+    margin-bottom: 15px;
+    padding: 10px;
     border: none;
+    background-color: #B48F8F;
+    color: #fff;
+  }
+  
+  .right-side button {
+    padding: 10px;
+    border: none;
+    background-color: #B48F8F;
+    color: #fff;
     cursor: pointer;
-}
-
-form button:hover {
-    background-color: #2D3748; /* Darker shade on hover */
-}
-
-address p {
-    margin: 0.5em 0;
-    color: #2D3748; /* Darker color for address text */
-}
+  }
+  
+  .right-side button:hover {
+    background-color: #9E7D7D;
+  }
+  
