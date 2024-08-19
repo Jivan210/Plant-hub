@@ -2,6 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Login Credentials
+
+### Admin Login
+- **Email:** `admin@gmail.com`
+- **Password:** `admin123`
+
+### Customer Login
+- **Email:** `jivan@gmail.com`
+- **Password:** `jivan123`
+
 ## Available Scripts
 
 In the project directory, you can run:

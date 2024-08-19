@@ -7,7 +7,7 @@ const CUSTOMER_CREDENTIALS = [
     {
         name: 'Jivan Pal',
         email: 'jivan@gmail.com',
-        password: 'Jivan@12345#',
+        password: 'jivan123',
         phoneNumber: '87623456678',
         address: 'Patia, BBSR',
         state: 'Odisha',
