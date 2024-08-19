@@ -34,12 +34,9 @@ const AdminProfilePage = () => {
             <header>
                 <h1>B.planet</h1>
                 <nav>
-                    {/* <a href="/home">Home</a>
-                    <a href="/profile">Profile</a>
-                    <a href="/contact">Contact Us</a> */}
-                    <Link to = "/adminhome">Home</Link>
-                    <Link to = "/adminprofilepage">Profile</Link>
-                    <Link to = "/admincontactus">Contact Us</Link>
+                    <Link to="/adminhome">Home</Link>
+                    <Link to="/adminprofilepage">Profile</Link>
+                    <Link to="/admincontactus">Contact Us</Link>
                 </nav>
             </header>
             <main>

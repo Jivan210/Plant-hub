@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/customerDescriptionPage.css';
 import { useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const CustomerDescriptionPage = () => {
     const location = useLocation();
@@ -11,9 +12,9 @@ const CustomerDescriptionPage = () => {
             <header>
                 <h1>B.planet</h1>
                 <nav>
-                    <a href="/customerhome">Home</a>
-                    <a href="/customerprofilepage">Profile</a>
-                    <a href="/customercontactus">Contact Us</a>
+                    <Link to="/customerhome">Home</Link>
+                    <Link to="/customerprofilepage">Profile</Link>
+                    <Link to="/customercontactus">Contact Us</Link>
                 </nav>
             </header>
             <main>

@@ -1,23 +1,14 @@
 const ADMIN_CREDENTIALS = {
-    email: 'admin@example.com',
+    email: 'admin@gmail.com',
     password: 'admin123'
 };
 
 const CUSTOMER_CREDENTIALS = [
     {
         name: 'Jivan Pal',
-        email: 'jivan.pal@gmail.com',
+        email: 'jivan@gmail.com',
         password: 'Jivan@12345#',
         phoneNumber: '87623456678',
-        address: 'Patia, BBSR',
-        state: 'Odisha',
-        zipCode: '751024'
-    },
-    {
-        name: 'Amrita',
-        email: 'amrita@gmail.com',
-        password: 'amrita@1234#',
-        phoneNumber: '1234567891',
         address: 'Patia, BBSR',
         state: 'Odisha',
         zipCode: '751024'

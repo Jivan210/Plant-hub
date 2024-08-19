@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/customerProfilePage.css';
 import profileImage from '../resources/Logininpageimage.png';
+import { Link } from 'react-router-dom';
 
 const CustomerProfilePage = () => {
     const [profile, setProfile] = useState({
-        name: 'Rahul Kumar',
-        email: 'rahulkumar@gmail.com',
+        name: 'Jivan Jyoti Pal',
+        email: 'jivan@gmail.com',
         phoneNumber: '9598755687',
         address: 'Patia, Bhubaneswar',
         state: 'Odisha',
@@ -26,7 +27,7 @@ const CustomerProfilePage = () => {
 
     const handleSave = (e) => {
         e.preventDefault();
-        // Save profile data to storage or server
+
         console.log('Profile data saved:', profile);
     };
 
@@ -35,9 +36,9 @@ const CustomerProfilePage = () => {
             <header>
                 <h1>B.planet</h1>
                 <nav>
-                    <a href="/home">Home</a>
-                    <a href="/profile">Profile</a>
-                    <a href="/contact">Contact Us</a>
+                    <Link to="/customerhome">Home</Link>
+                    <Link to="/customerprofilepage">Profile</Link>
+                    <Link to="/customercontactus">Contact Us</Link>
                 </nav>
             </header>
             <main>
